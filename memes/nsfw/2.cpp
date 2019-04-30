@@ -1,0 +1,13 @@
+#include <iostream>
+
+int fibber(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        return fibber(n-1) + fibber(n-2);
+    }
+}
+
+int fib(int n) {
+    return fibber(n);
+}
